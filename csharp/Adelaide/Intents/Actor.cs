@@ -8,13 +8,10 @@ namespace Adelaide.Intents
     {
         public void Do(IntentRecognitionResult intent)
         {
-            if (ConversationContext.Sleep == true && intent.IntentId == "Wake")
+            if (ConversationContext.Sleep == true && intent.IntentId != "Wake")
             {
-                Wake.Act(intent);
-
                 return;
             }
-
 
             if (ActionMap.TryGetValue(intent.IntentId, 
                 out Action<IntentRecognitionResult> act))
