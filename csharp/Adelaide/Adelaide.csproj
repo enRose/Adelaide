@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.NodeServices" Version="2.2.0" />
+    <PackageReference Include="NetCoreAudio" Version="1.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="node_modules\.bin\sshpk-conv" />
+    <None Remove="TTS\tts.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IntentRecognisor\" />
+    <Folder Include="TTS\" />
+    <Folder Include="Intents\" />
+    <Folder Include="Intents\Wake\" />
+    <Folder Include="Intents\CreditCardApply.Wake\" />
+    <Folder Include="Intents\CreditCardApply.Sleep\" />
+    <Folder Include="Intents\NoMatch\" />
+    <Folder Include="Intents\AgreeCreditCheck\" />
+    <Folder Include="Intents\Wake\Speeches\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Intents\NoMatch\Speeches\" />
+    <Folder Include="Intents\CreditCardApply.Wake\Speeches\" />
+    <Folder Include="Intents\CreditCardApply.Sleep\Speeches\" />
+    <Folder Include="CreditCardAppContext\" />
+    <Folder Include="Intents\AgreeCreditCheck\Speeches\" />
+    <Folder Include="Intents\ASBCreditCardStart\" />
+    <Folder Include="Intents\ASBCreditCardStart\Speeches\" />
+    <Folder Include="Intents\Sleep\" />
+    <Folder Include="Intents\Sleep\Speeches\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Actions\ActionBase.cs" />
+    <Compile Remove="Intents\IAction.cs" />
+  </ItemGroup>
+</Project>
