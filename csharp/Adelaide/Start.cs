@@ -2,6 +2,7 @@ using System;
 using Adelaide.Intents;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech;
+using Adelaide.Unexpected;
 
 namespace Adelaide
 {
@@ -44,7 +45,9 @@ namespace Adelaide
 
                 case ResultReason.NoMatch:
 
-                    Logger.OnNoMatch();
+                    Logger.OnSpeechUnrecognised();
+
+                    UnrecognisedSpeechHandler.Act();
 
                     break;
             }

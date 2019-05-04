@@ -26,7 +26,7 @@
     <Folder Include="Intents\NoMatch\Speeches\" />
     <Folder Include="Intents\Sleep\" />
     <Folder Include="Intents\Sleep\Speeches\" />
-    <Folder Include="Skills\" />
+    <Folder Include="Unexpected\" />
     <Folder Include="Intents\CreditCardApply\" />
     <Folder Include="Intents\CreditCardApply\ASBCreditCardStart\" />
     <Folder Include="Intents\CreditCardApply\AgreeCreditCheck\" />
@@ -34,10 +34,10 @@
     <Folder Include="Intents\CreditCardApply\CreditCardApplySleep\" />
     <Folder Include="Intents\CreditCardApply\CreditCardApplyWake\" />
     <Folder Include="Intents\CreditCardApply\CreditCardAppContext\" />
-    <Folder Include="Skills\UnrecognisedSpeechHandler\" />
-    <Folder Include="Skills\UnrecognisedSpeechHandler\Speeches\" />
-    <Folder Include="Skills\DirectRequestsToHuman\" />
-    <Folder Include="Skills\DirectRequestsToHuman\Speeches\" />
+    <Folder Include="Unexpected\UnrecognisedSpeechHandler\" />
+    <Folder Include="Unexpected\UnrecognisedSpeechHandler\Speeches\" />
+    <Folder Include="Unexpected\DirectRequestsToHuman\" />
+    <Folder Include="Unexpected\DirectRequestsToHuman\Speeches\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Actions\ActionBase.cs" />

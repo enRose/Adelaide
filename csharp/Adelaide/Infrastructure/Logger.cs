@@ -24,7 +24,7 @@ namespace Adelaide.Infrastructure
             Console.WriteLine($"    Intent not recognized.");
         }
 
-        public static void OnNoMatch()
+        public static void OnSpeechUnrecognised()
         {
             Console.WriteLine($"NOMATCH: Speech could not be recognized.");
         }
