@@ -2,7 +2,7 @@ using Adelaide.CreditCardAppContext;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-namespace Adelaide.Intents
+namespace Adelaide.IntentHandler.CreditCardApply
 {
     public static class AgreeCreditCheck
     {
@@ -14,11 +14,11 @@ namespace Adelaide.Intents
 
         public static void Act(IntentRecognitionResult intent)
         {
-            CreditCardAppContext.CreditCardAppCxt.AppStatus = AppStatus.InProgress;
+            CreditCardApp.AppStatus = AppStatus.InProgress;
 
-            CreditCardAppContext.CreditCardAppCxt.AgreeCreditCheck = true;
+            CreditCardApp.AgreeCreditCheck = true;
 
-            CreditCardAppContext.CreditCardAppCxt.NextStep = AppStep.WhatIsCurrentAddress;
+            CreditCardApp.NextStep = AppStep.WhatIsCurrentAddress;
 
             Utils.RandomlyPlay(speeches, "AgreeCreditCheck");
         }

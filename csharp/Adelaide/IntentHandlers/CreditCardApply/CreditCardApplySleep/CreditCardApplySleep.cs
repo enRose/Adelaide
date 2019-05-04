@@ -2,7 +2,7 @@ using Adelaide.CreditCardAppContext;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-namespace Adelaide.Intents
+namespace Adelaide.IntentHandler.CreditCardApply
 {
     public static class CreditCardApplySleep
     {
@@ -15,7 +15,7 @@ namespace Adelaide.Intents
 
         public static void Act(IntentRecognitionResult intent)
         {
-            CreditCardAppCxt.AppStatus = AppStatus.Paused;
+            CreditCardApp.AppStatus = AppStatus.Paused;
 
             Utils.RandomlyPlay(speeches, "CreditCardApplySleep");
         }

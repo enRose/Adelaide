@@ -1,5 +1,5 @@
 using System;
-using Adelaide.Intents;
+using Adelaide.IntentHandler;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech;
 using Adelaide.Unexpected;

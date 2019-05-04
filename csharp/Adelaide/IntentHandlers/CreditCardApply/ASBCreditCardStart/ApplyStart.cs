@@ -3,7 +3,7 @@ using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
 
-namespace Adelaide.Intents
+namespace Adelaide.IntentHandler.CreditCardApply
 {
     public static class ApplyASBStart
     {
@@ -14,9 +14,9 @@ namespace Adelaide.Intents
 
         public static void Act(IntentRecognitionResult intent)
         {
-            CreditCardAppContext.CreditCardAppCxt.AppStatus = AppStatus.New;
+            CreditCardApp.AppStatus = AppStatus.New;
 
-            CreditCardAppContext.CreditCardAppCxt.NextStep = AppStep.AgreeCreditCheck;
+            CreditCardApp.NextStep = AppStep.AgreeCreditCheck;
 
             Utils.RandomlyPlay(speeches, "ASBCreditCardStart");
         }

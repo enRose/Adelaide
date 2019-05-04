@@ -1,6 +1,5 @@
 using System;
-using System.Collections.Generic;
-using Adelaide.Intents;
+using Adelaide.IntentHandler;
 using Microsoft.CognitiveServices.Speech.Intent;
 
 namespace Adelaide
@@ -16,31 +15,14 @@ namespace Adelaide
                 return;
             }
 
-            if (ActionMap.TryGetValue(intentId, out Action<IntentRecognitionResult> act))
+            if (IntentHandlerLocator.Map.TryGetValue(intentId, out Action<IntentRecognitionResult> actOn))
             {
-                act(intent);
+                actOn(intent);
             }
             else
             {
                 NoMatch.Act(intent);
             }
         }
-
-        public Dictionary<IntentId, Action<IntentRecognitionResult>> ActionMap =>
-
-        new Dictionary<IntentId, Action<IntentRecognitionResult>>
-        {
-            { IntentId.Wake, Wake.Act },
-
-            { IntentId.Sleep, Sleep.Act },
-
-            { IntentId.ApplyForCreditCardWake, CreditCardApplyWake.Act },
-
-            { IntentId.ApplyForCreditCardSleep, CreditCardApplyWake.Act },
-
-            { IntentId.ASBCreditCardStart, ApplyASBStart.Act },
-
-            { IntentId.AgreeCreditCheck, AgreeCreditCheck.Act }
-        };
     }
 }

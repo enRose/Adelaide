@@ -3,10 +3,12 @@ using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
 
-namespace Adelaide.Intents
+namespace Adelaide.IntentHandler.CreditCardApply
 {
     public static class CreditCardApplyWake
     {
+        private const string thisFolderName = "CreditCardApplyWake";
+
         public static string[] speeches = {
                 "ASBHasTheBestProducts",
                 "InGoodHandsOfMyCreator",
@@ -15,14 +17,14 @@ namespace Adelaide.Intents
 
         public static void Act(IntentRecognitionResult intent)
         {
-            if (CreditCardAppCxt.AppStatus == AppStatus.Paused)
+            if (CreditCardApp.AppStatus == AppStatus.Paused)
             {
-                Utils.Play("YesNoResumeExistingCCApp", "CreditCardApplyWake");
+                Utils.Play("DoYouWantResumeExistingCCApp", thisFolderName);
 
                 return;
             }
 
-            Utils.RandomlyPlay(speeches, "CreditCardApplyWake");
+            Utils.RandomlyPlay(speeches, thisFolderName);
         }
     }
 }
