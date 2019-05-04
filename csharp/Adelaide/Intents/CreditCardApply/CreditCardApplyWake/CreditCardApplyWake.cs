@@ -1,3 +1,4 @@
+using Adelaide.CreditCardAppContext;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
@@ -14,7 +15,14 @@ namespace Adelaide.Intents
 
         public static void Act(IntentRecognitionResult intent)
         {
-            Utils.PlayOneOf(speeches, "CreditCardApply.Wake");
+            if (CreditCardAppCxt.AppStatus == AppStatus.Paused)
+            {
+                Utils.Play("YesNoResumeExistingCCApp", "CreditCardApplyWake");
+
+                return;
+            }
+
+            Utils.RandomlyPlay(speeches, "CreditCardApplyWake");
         }
     }
 }

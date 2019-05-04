@@ -16,7 +16,7 @@ namespace Adelaide.Intents
         {
             ConversationContext.Sleep = false;
 
-            Utils.PlayOneOf(speeches, "Wake");
+            Utils.RandomlyPlay(speeches, "Wake");
         }
     }
 }

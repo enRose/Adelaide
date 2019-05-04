@@ -20,21 +20,24 @@
     <Folder Include="TTS\" />
     <Folder Include="Intents\" />
     <Folder Include="Intents\Wake\" />
-    <Folder Include="Intents\CreditCardApply.Wake\" />
-    <Folder Include="Intents\CreditCardApply.Sleep\" />
     <Folder Include="Intents\NoMatch\" />
-    <Folder Include="Intents\AgreeCreditCheck\" />
     <Folder Include="Intents\Wake\Speeches\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Intents\NoMatch\Speeches\" />
-    <Folder Include="Intents\CreditCardApply.Wake\Speeches\" />
-    <Folder Include="Intents\CreditCardApply.Sleep\Speeches\" />
-    <Folder Include="CreditCardAppContext\" />
-    <Folder Include="Intents\AgreeCreditCheck\Speeches\" />
-    <Folder Include="Intents\ASBCreditCardStart\" />
-    <Folder Include="Intents\ASBCreditCardStart\Speeches\" />
     <Folder Include="Intents\Sleep\" />
     <Folder Include="Intents\Sleep\Speeches\" />
+    <Folder Include="Skills\" />
+    <Folder Include="Intents\CreditCardApply\" />
+    <Folder Include="Intents\CreditCardApply\ASBCreditCardStart\" />
+    <Folder Include="Intents\CreditCardApply\AgreeCreditCheck\" />
+    <Folder Include="Intents\CreditCardApply\CreditCardApplyResume\" />
+    <Folder Include="Intents\CreditCardApply\CreditCardApplySleep\" />
+    <Folder Include="Intents\CreditCardApply\CreditCardApplyWake\" />
+    <Folder Include="Intents\CreditCardApply\CreditCardAppContext\" />
+    <Folder Include="Skills\UnrecognisedSpeechHandler\" />
+    <Folder Include="Skills\UnrecognisedSpeechHandler\Speeches\" />
+    <Folder Include="Skills\DirectRequestsToHuman\" />
+    <Folder Include="Skills\DirectRequestsToHuman\Speeches\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Actions\ActionBase.cs" />

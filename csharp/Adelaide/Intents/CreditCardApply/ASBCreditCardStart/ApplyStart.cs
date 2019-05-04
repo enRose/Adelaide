@@ -1,4 +1,4 @@
-using Adelaide.CreditCardApp;
+using Adelaide.CreditCardAppContext;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
@@ -14,13 +14,11 @@ namespace Adelaide.Intents
 
         public static void Act(IntentRecognitionResult intent)
         {
-            App.AppStatus = AppStatus.New;
+            CreditCardAppContext.CreditCardAppCxt.AppStatus = AppStatus.New;
 
-            App.NextStep = AppStep.AgreeCreditCheck;
+            CreditCardAppContext.CreditCardAppCxt.NextStep = AppStep.AgreeCreditCheck;
 
-            var inFolder = "ASBCreditCardStart";
-
-            Utils.PlayOneOf(speeches, inFolder);
+            Utils.RandomlyPlay(speeches, "ASBCreditCardStart");
         }
     }
 }
