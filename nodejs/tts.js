@@ -79,7 +79,7 @@ async function main() {
     // You can replace this with a string containing your subscription key. If
     // you prefer not to read from an env variable.
     // e.g. const subscriptionKey = "your_key_here";
-    const subscriptionKey = 'be65ae1f208e4ce4869fac72f14e7a87'//process.env.SPEECH_SERVICE_KEY;
+    const subscriptionKey = ''//process.env.SPEECH_SERVICE_KEY;
     
     if (!subscriptionKey) {
         throw new Error('Environment variable for your subscription key is not set.')
