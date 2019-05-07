@@ -3,11 +3,11 @@ using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
 
-namespace Adelaide.IntentHandler.CreditCardApply
+namespace Adelaide.IntentHandlers.CreditCardApply
 {
     public static class CreditCardApplyWake
     {
-        private const string thisFolderName = "CreditCardApplyWake";
+        private const string thisFolderName = "CreditCardApply/CreditCardApplyWake";
 
         public static string[] speeches = {
                 "ASBHasTheBestProducts",

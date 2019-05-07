@@ -1,23 +1,34 @@
 using System;
 using System.Collections.Generic;
-using Adelaide.IntentHandler.CreditCardApply;
+using Adelaide.IntentHandlers.CreditCardApply;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-namespace Adelaide.IntentHandler
+namespace Adelaide.IntentHandlers
 {
     public enum IntentId
     {
         Wake,
+
         Sleep,
 
         ApplyForCreditCardWake,
+
         ApplyForCreditCardSleep,
+
+        CreditCardApplyResume,
+
         ASBCreditCardStart,
+
         AgreeCreditCheck,
+
         WhatIsCurrentAddress,
+
         WhoIsNextOfKin,
+
         WhatIsNextOfKinAddress,
+
         WhatIsMainSourceOfIncome,
+
         HowMuchIsMainIncome,
 
         None
@@ -37,6 +48,8 @@ namespace Adelaide.IntentHandler
             { IntentId.ApplyForCreditCardWake, CreditCardApplyWake.Act },
 
             { IntentId.ApplyForCreditCardSleep, CreditCardApplyWake.Act },
+
+            { IntentId.CreditCardApplyResume, CreditCardApplyResume.Act},
 
             { IntentId.ASBCreditCardStart, ApplyASBStart.Act },
 

@@ -9,6 +9,8 @@
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.NodeServices" Version="2.2.0" />
     <PackageReference Include="NetCoreAudio" Version="1.4.0" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="4.0.0" />
+    <PackageReference Include="XPlat.Media.Capture" Version="1.6.19104.1" />
   </ItemGroup>
   
   <ItemGroup>
@@ -39,6 +41,7 @@
     <Folder Include="Unexpected\DirectRequestsToHuman\Speeches\" />
     <Folder Include="IntentHandlers\CreditCardApply\CreditCardApplyResume\Speeches\" />
     <Folder Include="IntentHandlers\Weather\" />
+    <Folder Include="ComputerVision\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Actions\ActionBase.cs" />

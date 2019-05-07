@@ -1,5 +1,5 @@
 using System;
-using Adelaide.IntentHandler;
+using Adelaide.IntentHandlers;
 using Microsoft.CognitiveServices.Speech.Intent;
 
 namespace Adelaide

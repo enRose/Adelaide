@@ -12,7 +12,7 @@ namespace Adelaide.Infrastructure
 
         public static string Path(string fileName, string intentFolderName)
         {
-            return "Intents/" + intentFolderName + "/Speeches/" + fileName + ".wav";
+            return "IntentHandlers/" + intentFolderName + "/Speeches/" + fileName + ".wav";
         }
 
         public static void Play(string speechFileName, string intentFolderName)

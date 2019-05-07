@@ -1,13 +1,12 @@
 using Adelaide.CreditCardAppContext;
 using Adelaide.Infrastructure;
-using Adelaide.IntentHandler;
 using Microsoft.CognitiveServices.Speech.Intent;
 
 namespace Adelaide.IntentHandlers.CreditCardApply
 {
     public static class CreditCardApplyResume
     {
-        private const string thisFoldeName = "CreditCardApplyResume";
+        private const string thisFoldeName = "CreditCardApply/CreditCardApplyResume";
 
         public static void Act(IntentRecognitionResult intent)
         {

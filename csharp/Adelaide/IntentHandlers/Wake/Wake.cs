@@ -1,7 +1,7 @@
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-namespace Adelaide.IntentHandler
+namespace Adelaide.IntentHandlers
 {
     public static class Wake
     {
