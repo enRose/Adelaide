@@ -8,7 +8,7 @@ namespace Adelaide
 {
     public class Start
     {
-        public static void Main(string[] args)
+        public static void _Main(string[] args)
         {
             var recognizer = new IntentRegonisor();
 
