@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\datacom\\source\\repos\\Adelaide\\csharp\\NetCoreAudio\\NetCoreAudio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\datacom\\source\\repos\\Adelaide\\csharp\\NetCoreAudio\\NetCoreAudio.csproj": {
+      "version": "1.4.1",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\datacom\\source\\repos\\Adelaide\\csharp\\NetCoreAudio\\NetCoreAudio.csproj",
+        "projectName": "NetCoreAudio",
+        "projectPath": "C:\\Users\\datacom\\source\\repos\\Adelaide\\csharp\\NetCoreAudio\\NetCoreAudio.csproj",
+        "packagesPath": "C:\\Users\\datacom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\datacom\\source\\repos\\Adelaide\\csharp\\NetCoreAudio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\datacom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

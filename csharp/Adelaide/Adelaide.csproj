@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,11 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.4.0" />
+    <Compile Remove="IntentHandlers\Weather\**" />
+    <EmbeddedResource Remove="IntentHandlers\Weather\**" />
+    <None Remove="IntentHandlers\Weather\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.NodeServices" Version="2.2.0" />
     <PackageReference Include="NetCoreAudio" Version="1.4.0" />
-    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="4.0.0" />
-    <PackageReference Include="XPlat.Media.Capture" Version="1.6.19104.1" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="5.0.0" />
   </ItemGroup>
   
   <ItemGroup>
@@ -24,7 +29,6 @@
     <Folder Include="IntentHandlers\Wake\" />
     <Folder Include="IntentHandlers\NoMatch\" />
     <Folder Include="IntentHandlers\Wake\Speeches\" />
-    <Folder Include="Infrastructure\" />
     <Folder Include="IntentHandlers\NoMatch\Speeches\" />
     <Folder Include="IntentHandlers\Sleep\" />
     <Folder Include="IntentHandlers\Sleep\Speeches\" />
@@ -40,11 +44,13 @@
     <Folder Include="Unexpected\DirectRequestsToHuman\" />
     <Folder Include="Unexpected\DirectRequestsToHuman\Speeches\" />
     <Folder Include="IntentHandlers\CreditCardApply\CreditCardApplyResume\Speeches\" />
-    <Folder Include="IntentHandlers\Weather\" />
     <Folder Include="ComputerVision\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Actions\ActionBase.cs" />
     <Compile Remove="Intents\IAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreAudio\NetCoreAudio.csproj" />
   </ItemGroup>
 </Project>

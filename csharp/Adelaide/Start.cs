@@ -8,7 +8,7 @@ namespace Adelaide
 {
     public class Start
     {
-        public static void _Main(string[] args)
+        public static void Main(string[] args)
         {
             var recognizer = new IntentRegonisor();
 
@@ -18,12 +18,12 @@ namespace Adelaide
 
             do
             {
-                ContinueRecognise(recognizer, actor);
+                Recognise(recognizer, actor);
             }
             while (true);
         }
 
-        public static void ContinueRecognise(IntentRegonisor recognizer, Actor actor)
+        public static void Recognise(IntentRegonisor recognizer, Actor actor)
         {
             var result = recognizer.RecognizeOnce();
 

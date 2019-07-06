@@ -1,0 +1,17 @@
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\bin\Debug\netstandard2.0\NetCoreAudio.deps.json
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\bin\Debug\netstandard2.0\NetCoreAudio.dll
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\bin\Debug\netstandard2.0\NetCoreAudio.pdb
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.csprojAssemblyReference.cache
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.csproj.CoreCompileInputs.cache
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.AssemblyInfoInputs.cache
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.AssemblyInfo.cs
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.dll
+C:\Users\datacom\Downloads\NetCoreAudio-master\NetCoreAudio-master\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.pdb
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\bin\Debug\netstandard2.0\NetCoreAudio.deps.json
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\bin\Debug\netstandard2.0\NetCoreAudio.dll
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\bin\Debug\netstandard2.0\NetCoreAudio.pdb
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.csproj.CoreCompileInputs.cache
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.AssemblyInfoInputs.cache
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.AssemblyInfo.cs
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.dll
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.pdb

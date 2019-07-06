@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adelaide", "Adelaide\Adelaide.csproj", "{0E97572B-71E7-483A-9441-94BA1FE0A236}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adelaide", "Adelaide\Adelaide.csproj", "{0E97572B-71E7-483A-9441-94BA1FE0A236}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreAudio", "NetCoreAudio\NetCoreAudio.csproj", "{3195C061-B2DB-4207-8025-66200F6220F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,15 @@ Global
 		{0E97572B-71E7-483A-9441-94BA1FE0A236}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E97572B-71E7-483A-9441-94BA1FE0A236}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E97572B-71E7-483A-9441-94BA1FE0A236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3195C061-B2DB-4207-8025-66200F6220F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3195C061-B2DB-4207-8025-66200F6220F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3195C061-B2DB-4207-8025-66200F6220F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3195C061-B2DB-4207-8025-66200F6220F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74DE8EEF-B12C-48DE-970C-CE70AE6EA38E}
 	EndGlobalSection
 EndGlobal
