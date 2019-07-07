@@ -10,9 +10,9 @@ namespace Adelaide.Infrastructure
         public static Func<int, int> Randomise =
             (int num) => rnd.Next(num);
 
-        public static string SoundPath(string fileName, string intentFolderName)
+        public static string SoundPath(string fileName, string folderPath)
         {
-            return "IntentHandlers\\" + intentFolderName + "\\Speeches\\" + fileName + ".wav";
+            return folderPath + "\\Speeches\\" + fileName + ".wav";
         }
 
         public static void Play(string speechFileName, string intentFolderName)

@@ -7,7 +7,7 @@ namespace Adelaide.IntentHandlers.CreditCardApply
 {
     public static class CreditCardApplyWake
     {
-        private const string thisFolderName = "CreditCardApply/CreditCardApplyWake";
+        private const string thisFolderName = "IntentHandlers\\CreditCardApply\\CreditCardApplyWake";
 
         public static string[] speeches = {
                 "ASBHasTheBestProducts",

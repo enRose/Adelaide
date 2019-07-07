@@ -6,7 +6,7 @@ namespace Adelaide.IntentHandlers.CreditCardApply
 {
     public static class CreditCardApplyResume
     {
-        private const string thisFoldeName = "CreditCardApply/CreditCardApplyResume";
+        private const string thisFoldeName = "IntentHandlers\\CreditCardApply\\CreditCardApplyResume";
 
         public static void Act(IntentRecognitionResult intent)
         {

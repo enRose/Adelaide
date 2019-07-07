@@ -8,7 +8,7 @@ namespace Adelaide.IntentHandlers
     {
         private static int noMatchCount = 0;
 
-        private const string thisFolderName = "NoMatch";
+        private const string thisFolderName = "IntentHandlers\\NoMatch";
 
         public static string[] speeches = {
                 "CannotHelp",

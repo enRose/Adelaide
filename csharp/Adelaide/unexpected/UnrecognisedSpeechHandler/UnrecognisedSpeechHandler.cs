@@ -6,7 +6,7 @@ namespace Adelaide.Unexpected
     {
         private static int unrecognisedSpeechCount = 0;
 
-        private const string thisFolderName = "SpeechUnrecognisedHandler";
+        private const string thisFolderName = "Unexpected\\UnrecognisedSpeechHandler";
 
         public static string[] speeches = {
                 "BegPardon",

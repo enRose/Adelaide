@@ -1,8 +1,7 @@
 using System;
-using Adelaide.IntentHandlers;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech;
-using Adelaide.Unexpected;
+
 
 namespace Adelaide
 {
@@ -33,7 +32,7 @@ namespace Adelaide
 
                     Logger.OnIntentRecognised(result);
 
-                    emily.Do(result);
+                    emily.OnIntentRecognised(result);
 
                     break;
 
@@ -46,8 +45,6 @@ namespace Adelaide
                 case ResultReason.NoMatch:
 
                     Logger.OnSpeechUnrecognised();
-
-                    UnrecognisedSpeechHandler.Act();
 
                     break;
             }
