@@ -5,55 +5,26 @@ using Microsoft.CognitiveServices.Speech.Intent;
 
 namespace Adelaide.IntentHandlers
 {
-    public enum IntentId
-    {
-        Wake,
-
-        Sleep,
-
-        ApplyForCreditCardWake,
-
-        ApplyForCreditCardSleep,
-
-        CreditCardApplyResume,
-
-        ASBCreditCardStart,
-
-        AgreeCreditCheck,
-
-        WhatIsCurrentAddress,
-
-        WhoIsNextOfKin,
-
-        WhatIsNextOfKinAddress,
-
-        WhatIsMainSourceOfIncome,
-
-        HowMuchIsMainIncome,
-
-        None
-    }
-
     public static class IntentHandlerLocator
     {
-        public static Dictionary<IntentId, Action<IntentRecognitionResult>> 
+        public static Dictionary<string, Action<IntentRecognitionResult>> 
         Map =>
 
-        new Dictionary<IntentId, Action<IntentRecognitionResult>>
+        new Dictionary<string, Action<IntentRecognitionResult>>
         {
-            { IntentId.Wake, Wake.Act },
+            { "Wake", Wake.Act } ,
 
-            { IntentId.Sleep, Sleep.Act },
+            { "Sleep", Sleep.Act },
 
-            { IntentId.ApplyForCreditCardWake, CreditCardApplyWake.Act },
+            { "ApplyForCreditCardWake", CreditCardApplyWake.Act },
 
-            { IntentId.ApplyForCreditCardSleep, CreditCardApplyWake.Act },
+            { "ApplyForCreditCardSleep", CreditCardApplyWake.Act },
 
-            { IntentId.CreditCardApplyResume, CreditCardApplyResume.Act},
+            { "CreditCardApplyResume", CreditCardApplyResume.Act},
 
-            { IntentId.ASBCreditCardStart, ApplyASBStart.Act },
+            { "ASBCreditCardStart", ApplyASBStart.Act },
 
-            { IntentId.AgreeCreditCheck, AgreeCreditCheck.Act }
+            { "AgreeCreditCheck", AgreeCreditCheck.Act }
         };
     }
 }

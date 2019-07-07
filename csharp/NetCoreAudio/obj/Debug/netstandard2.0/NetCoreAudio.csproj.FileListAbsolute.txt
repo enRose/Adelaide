@@ -15,3 +15,4 @@ C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard
 C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.AssemblyInfo.cs
 C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.dll
 C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.pdb
+C:\Users\datacom\source\repos\Adelaide\csharp\NetCoreAudio\obj\Debug\netstandard2.0\NetCoreAudio.csprojAssemblyReference.cache

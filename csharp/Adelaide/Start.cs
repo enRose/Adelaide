@@ -12,18 +12,18 @@ namespace Adelaide
         {
             var recognizer = new IntentRegonisor();
 
-            var actor = new Actor();
+            var emily = new Emily();
 
             Console.WriteLine("Say something...");
 
             do
             {
-                Recognise(recognizer, actor);
+                Recognise(recognizer, emily);
             }
             while (true);
         }
 
-        public static void Recognise(IntentRegonisor recognizer, Actor actor)
+        public static void Recognise(IntentRegonisor recognizer, Emily emily)
         {
             var result = recognizer.RecognizeOnce();
 
@@ -33,7 +33,7 @@ namespace Adelaide
 
                     Logger.OnIntentRecognised(result);
 
-                    actor.Do(result);
+                    emily.Do(result);
 
                     break;
 
