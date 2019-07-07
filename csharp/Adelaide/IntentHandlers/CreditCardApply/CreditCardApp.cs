@@ -1,6 +1,6 @@
 
 using System.Collections.Generic;
-using Adelaide.IntentHandlers;
+
 
 namespace Adelaide.CreditCardAppContext
 {
@@ -44,21 +44,21 @@ namespace Adelaide.CreditCardAppContext
 
     public static class IntentIdLocator
     {
-        public static Dictionary<AppStep, IntentId>
+        public static Dictionary<AppStep, string>
             Map =>
 
-            new Dictionary<AppStep, IntentId> {
-                {AppStep.AgreeCreditCheck, IntentId.AgreeCreditCheck},
+            new Dictionary<AppStep, string> {
+                {AppStep.AgreeCreditCheck, "AgreeCreditCheck"},
 
-                {AppStep.WhatIsCurrentAddress, IntentId.WhatIsCurrentAddress},
+                {AppStep.WhatIsCurrentAddress, "WhatIsCurrentAddress"},
 
-                {AppStep.WhoIsNextOfKin, IntentId.WhoIsNextOfKin},
+                {AppStep.WhoIsNextOfKin, "WhoIsNextOfKin"},
 
-                {AppStep.WhatIsNextOfKinAddress, IntentId.WhatIsNextOfKinAddress},
+                {AppStep.WhatIsNextOfKinAddress, "WhatIsNextOfKinAddress"},
 
-                {AppStep.WhatIsMainSourceOfIncome, IntentId.WhatIsMainSourceOfIncome},
+                {AppStep.WhatIsMainSourceOfIncome, "WhatIsMainSourceOfIncome"},
 
-                {AppStep.HowMuchIsMainIncome, IntentId.HowMuchIsMainIncome}
+                {AppStep.HowMuchIsMainIncome, "HowMuchIsMainIncome"}
             };
     }
     
