@@ -10,39 +10,9 @@ namespace Adelaide.Infrastructure
         public static Func<int, int> Randomise =
             (int num) => rnd.Next(num);
 
-        public static string SoundPath(string fileName, string folderPath)
+        public static string AbsolutePathOf(string fileName, string folderPath)
         {
-            return folderPath + "\\Speeches\\" + fileName + ".wav";
-        }
-
-        public static void Play(string speechFileName, string intentFolderName)
-        {
-            var path = SoundPath(speechFileName, intentFolderName);
-
-            Play(path);
-        }
-
-        public static void PlayOneOf(string[] speeches, string inFolder)
-        {
-            var index = Randomise(speeches.Length);
-
-            var path = SoundPath(speeches[index], inFolder);
-
-            Play(path);
-        }
-
-        public static void PlayOneFrom((string path, string[] speeches) playList)
-        {
-            var index = Randomise(playList.speeches.Length);
-
-            var path = SoundPath(playList.speeches[index], playList.path);
-
-            Play(path);
-        }
-
-        public static void Play(string path)
-        {
-            var player = new NetCoreAudio.Player();
+            var path = folderPath + "\\Speeches\\" + fileName + ".wav";
 
             // This will get the current WORKING directory (i.e. \bin\Debug)
             string workingDirectory = Environment.CurrentDirectory;
@@ -51,9 +21,41 @@ namespace Adelaide.Infrastructure
             // This will get the current PROJECT directory
             string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
 
-            var dir = projectDirectory + "\\" + path;
+            var absolutePath = projectDirectory + "\\" + path;
 
-            player.Play(dir).Wait();
+            return absolutePath;
+        }
+
+        public static void Play(string speechFileName, string intentFolderName)
+        {
+            var path = AbsolutePathOf(speechFileName, intentFolderName);
+
+            Play(path);
+        }
+
+        public static void PlayOneOf(string[] speeches, string inFolder)
+        {
+            var index = Randomise(speeches.Length);
+
+            var path = AbsolutePathOf(speeches[index], inFolder);
+
+            Play(path);
+        }
+
+        public static void PlayOneFrom((string path, string[] speeches) playList)
+        {
+            var index = Randomise(playList.speeches.Length);
+
+            var path = AbsolutePathOf(playList.speeches[index], playList.path);
+
+            Play(path);
+        }
+
+        public static void Play(string path)
+        {
+            var player = new NetCoreAudio.Player();
+
+            player.Play(path).Wait();
 
             bool finished = false;
 
