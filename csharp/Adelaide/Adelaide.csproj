@@ -24,7 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IntentHandlers\DigitalComms\Michael\" />
-    <Folder Include="IntentHandlers\DigitalComms\Opening\Speeches\" />
+    <Folder Include="IntentHandlers\DigitalComms\Intro\Speeches\" />
     <Folder Include="IntentHandlers\DigitalComms\Rommel\Speeches\" />
     <Folder Include="IntentHandlers\DigitalComms\Sahil\" />
     <Folder Include="IntentHandlers\DigitalComms\Scott\" />

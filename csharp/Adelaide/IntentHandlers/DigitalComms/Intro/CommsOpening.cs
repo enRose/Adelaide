@@ -16,7 +16,7 @@ namespace Adelaide.IntentHandlers.DigitalComms.Opening
         {
             ConversationContext.Sleep = false;
 
-            Utils.RandomlyPlay(speeches, "DigitalComms\\Opening");
+            Utils.RandomlyPlay(speeches, "DigitalComms\\Intro");
         }
     }
 }

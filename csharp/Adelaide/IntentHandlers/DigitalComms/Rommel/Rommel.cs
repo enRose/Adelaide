@@ -14,7 +14,8 @@ namespace Adelaide.IntentHandlers.DigitalComms.Rommel
         {
             ConversationContext.Sleep = false;
 
-            Utils.RandomlyPlay(speeches, "IntentHandlers\\DigitalComms\\Rommel");
+            Utils.RandomlyPlay(speeches, @"IntentHandlers\DigitalComms\Rommel");
         }
     }
 }
+ 
