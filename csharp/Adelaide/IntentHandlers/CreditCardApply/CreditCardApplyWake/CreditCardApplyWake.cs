@@ -24,7 +24,7 @@ namespace Adelaide.IntentHandlers.CreditCardApply
                 return;
             }
 
-            Utils.RandomlyPlay(speeches, thisFolderName);
+            Utils.PlayOneOf(speeches, thisFolderName);
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Adelaide.Unexpected
                 return;
             }
 
-            Utils.RandomlyPlay(speeches, thisFolderName);
+            Utils.PlayOneOf(speeches, thisFolderName);
         }
     }
 }

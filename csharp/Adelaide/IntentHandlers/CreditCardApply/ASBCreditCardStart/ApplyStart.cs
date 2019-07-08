@@ -18,7 +18,7 @@ namespace Adelaide.IntentHandlers.CreditCardApply
 
             CreditCardApp.NextStep = AppStep.AgreeCreditCheck;
 
-            Utils.RandomlyPlay(speeches, "IntentHandlers\\CreditCardApply\\ASBCreditCardStart");
+            Utils.PlayOneOf(speeches, "IntentHandlers\\CreditCardApply\\ASBCreditCardStart");
         }
     }
 }

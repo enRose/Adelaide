@@ -9,14 +9,14 @@ namespace Adelaide.IntentHandlers.DigitalComms.Opening
         public static string[] speeches = {
                 "OkGettingScriptsReady",
                 "LoadingDigitalCommsSkills",
-                "YesPreparingCommsSkills"
+                "OkPreparingCommsSkills"
             };
 
         public static void Act(IntentRecognitionResult intent)
         {
-            ConversationContext.Sleep = false;
+            var playList = (path: @"IntentHandlers\DigitalComms\Intro", speeches);
 
-            Utils.RandomlyPlay(speeches, "DigitalComms\\Intro");
+            Utils.PlayOneFrom(playList);
         }
     }
 }

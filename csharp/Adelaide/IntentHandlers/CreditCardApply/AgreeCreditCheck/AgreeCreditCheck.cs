@@ -20,7 +20,7 @@ namespace Adelaide.IntentHandlers.CreditCardApply
 
             CreditCardApp.NextStep = AppStep.WhatIsCurrentAddress;
 
-            Utils.RandomlyPlay(speeches, "IntentHandlers\\CreditCardApply\\AgreeCreditCheck");
+            Utils.PlayOneOf(speeches, "IntentHandlers\\CreditCardApply\\AgreeCreditCheck");
         }
     }
 }

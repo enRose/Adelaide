@@ -17,7 +17,7 @@ namespace Adelaide.IntentHandlers.CreditCardApply
         {
             CreditCardApp.AppStatus = AppStatus.Paused;
 
-            Utils.RandomlyPlay(speeches, "IntentHandlers\\CreditCardApply\\CreditCardApplySleep");
+            Utils.PlayOneOf(speeches, "IntentHandlers\\CreditCardApply\\CreditCardApplySleep");
         }
     }
 }

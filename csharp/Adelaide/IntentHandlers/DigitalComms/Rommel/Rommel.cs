@@ -12,9 +12,7 @@ namespace Adelaide.IntentHandlers.DigitalComms.Rommel
 
         public static void Act(IntentRecognitionResult intent)
         {
-            ConversationContext.Sleep = false;
-
-            Utils.RandomlyPlay(speeches, @"IntentHandlers\DigitalComms\Rommel");
+            Utils.PlayOneOf(speeches, @"IntentHandlers\DigitalComms\Rommel");
         }
     }
 }

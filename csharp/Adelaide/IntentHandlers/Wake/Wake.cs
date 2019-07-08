@@ -16,7 +16,7 @@ namespace Adelaide.IntentHandlers
         {
             ConversationContext.Sleep = false;
 
-            Utils.RandomlyPlay(speeches, "IntentHandlers\\Wake");
+            Utils.PlayOneOf(speeches, "IntentHandlers\\Wake");
         }
     }
 }

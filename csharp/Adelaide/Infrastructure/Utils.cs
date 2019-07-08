@@ -22,11 +22,20 @@ namespace Adelaide.Infrastructure
             Play(path);
         }
 
-        public static void RandomlyPlay(string[] speeches, string inFolder)
+        public static void PlayOneOf(string[] speeches, string inFolder)
         {
             var index = Randomise(speeches.Length);
 
             var path = SoundPath(speeches[index], inFolder);
+
+            Play(path);
+        }
+
+        public static void PlayOneFrom((string path, string[] speeches) playList)
+        {
+            var index = Randomise(playList.speeches.Length);
+
+            var path = SoundPath(playList.speeches[index], playList.path);
 
             Play(path);
         }
