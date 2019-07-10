@@ -4,12 +4,12 @@ using Microsoft.CognitiveServices.Speech.Intent;
 
 namespace Adelaide.IntentHandlers.DigitalComms.Opening
 {
-    public class CommsOpening
+    public class Intro
     {
         public static string[] speeches = {
-                "OkGettingScriptsReady",
-                "LoadingDigitalCommsSkills",
-                "OkPreparingCommsSkills"
+                "GetScriptReady",
+                "LoadCommsSkills",
+                "PrepareCommsScript"
             };
 
         public static void Act(IntentRecognitionResult intent)

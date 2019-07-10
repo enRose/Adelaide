@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Adelaide.IntentHandlers.CreditCardApply;
+using Adelaide.IntentHandlers.DigitalComms.Michael;
 using Adelaide.IntentHandlers.DigitalComms.Opening;
 using Adelaide.IntentHandlers.DigitalComms.Rommel;
 using Microsoft.CognitiveServices.Speech.Intent;
@@ -29,7 +30,10 @@ namespace Adelaide.IntentHandlers
 
             { "AgreeCreditCheck", AgreeCreditCheck.Act },
 
-            { "ASB Digital comms opening", CommsOpening.Act},
+
+            { "ASB Digital comms opening", Intro.Act},
+
+            { "Team perf", Michael.TeamPerf},
 
             { "Rommel", Rommel.Act}
         };

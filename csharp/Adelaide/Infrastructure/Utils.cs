@@ -26,9 +26,9 @@ namespace Adelaide.Infrastructure
             return absolutePath;
         }
 
-        public static void Play(string speechFileName, string intentFolderName)
+        public static void Play(string fileName, string folderPath)
         {
-            var path = AbsolutePathOf(speechFileName, intentFolderName);
+            var path = AbsolutePathOf(fileName, folderPath);
 
             Play(path);
         }
