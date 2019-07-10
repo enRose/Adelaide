@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace Adelaide.Infrastructure
 {
@@ -19,9 +20,16 @@ namespace Adelaide.Infrastructure
             // or: Directory.GetCurrentDirectory() gives the same result
 
             // This will get the current PROJECT directory
-            string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+            string projectDirectory = Directory
+                .GetParent(workingDirectory)
+                .Parent.Parent.FullName;
 
             var absolutePath = projectDirectory + "\\" + path;
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+            {
+                absolutePath = absolutePath.Replace("\\", "/");
+            }
 
             return absolutePath;
         }
