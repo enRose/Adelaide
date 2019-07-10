@@ -23,11 +23,8 @@
     <None Remove="TTS\tts.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="IntentHandlers\DigitalComms\Michael\" />
     <Folder Include="IntentHandlers\DigitalComms\Intro\Speeches\" />
     <Folder Include="IntentHandlers\DigitalComms\Rommel\Speeches\" />
-    <Folder Include="IntentHandlers\DigitalComms\Sahil\" />
-    <Folder Include="IntentHandlers\DigitalComms\Scott\" />
     <Folder Include="IntentRecognisor\" />
     <Folder Include="TTS\" />
     <Folder Include="IntentHandlers\Wake\" />
