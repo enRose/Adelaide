@@ -26,5 +26,26 @@ namespace Adelaide.IntentHandlers.DigitalComms.Michael
         {
             Utils.Play("BuyMeDinner", folderPath);
         }
+
+        public static void BeSerious(IntentRecognitionResult intent)
+        {
+            Utils.Play("BeSerious", folderPath);
+        }
+
+        public static void EnjoyedMost(IntentRecognitionResult intent)
+        {
+            Utils.Play("EnjoyedMost", folderPath);
+        }
+
+        public static void StillNeedHostRCU(IntentRecognitionResult intent)
+        {
+            Utils.Play("StillNeedHostRCU", folderPath);
+        }
+
+        public static void ExistentialCrisis(IntentRecognitionResult intent)
+        {
+            Utils.Play("ExistentialCrisis", folderPath);
+        }
+
     }
 }
