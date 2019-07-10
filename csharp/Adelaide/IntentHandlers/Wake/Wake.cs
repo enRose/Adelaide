@@ -6,10 +6,10 @@ namespace Adelaide.IntentHandlers
     public static class Wake
     {
         public static string[] speeches = {
-                "AtYourServiceSir",
-                "IsThereAnythingICanHelpYouWithSir",
-                "YesIamHere",
-                "YesSir"           
+                "AtYourService",
+                "HowCanIHelpYou",
+                "IsThereAnythingICanHelpYouWith",
+                "YesIamHere"
             };
 
         public static void Act(IntentRecognitionResult intent)

@@ -31,9 +31,9 @@ namespace Adelaide.IntentHandlers
             { "AgreeCreditCheck", AgreeCreditCheck.Act },
 
 
-            { "ASB Digital comms opening", Intro.Act},
+            { "ASB-Digital-comms-opening", Intro.Act},
 
-            { "Team perf", Michael.TeamPerf},
+            { "Team-perf", Michael.TeamPerf},
 
             { "Rommel", Rommel.Act}
         };
