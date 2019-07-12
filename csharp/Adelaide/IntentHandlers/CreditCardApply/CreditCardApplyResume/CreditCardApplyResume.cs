@@ -20,9 +20,9 @@ namespace Adelaide.IntentHandlers.CreditCardApply
 
             var intentId = IntentIdLocator.Map[CreditCardApp.NextStep];
 
-            var intentHandler = IntentHandlerLocator.Map[intentId];
+            //var intentHandler = IntentHandlerLocator.Map[intentId];
 
-            intentHandler(intent);
+            //intentHandler(intent);
         }
     }
 }

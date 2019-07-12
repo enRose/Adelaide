@@ -26,14 +26,11 @@
     <Folder Include="IntentHandlers\DigitalComms\Rommel\Speeches\" />
     <Folder Include="IntentRecognisor\" />
     <Folder Include="TTS\" />
-    <Folder Include="IntentHandlers\Wake\" />
     <Folder Include="IntentHandlers\NoMatch\" />
     <Folder Include="IntentHandlers\Wake\Speeches\" />
     <Folder Include="IntentHandlers\NoMatch\Speeches\" />
-    <Folder Include="IntentHandlers\Sleep\" />
     <Folder Include="IntentHandlers\Sleep\Speeches\" />
     <Folder Include="Unexpected\" />
-    <Folder Include="IntentHandlers\CreditCardApply\" />
     <Folder Include="IntentHandlers\CreditCardApply\ASBCreditCardStart\" />
     <Folder Include="IntentHandlers\CreditCardApply\AgreeCreditCheck\" />
     <Folder Include="IntentHandlers\CreditCardApply\CreditCardApplyResume\" />

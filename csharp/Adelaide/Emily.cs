@@ -1,4 +1,3 @@
-using System;
 using Adelaide.IntentHandlers;
 using Adelaide.Unexpected;
 using Microsoft.CognitiveServices.Speech.Intent;
@@ -16,12 +15,7 @@ namespace Adelaide
                 return;
             }
 
-
-
-            if (IntentHandlerLocator.Map.TryGetValue(intent.IntentId, out Action<IntentRecognitionResult> actOn))
-            {
-                actOn(intent);
-            }
+            skills.Handle(intent);
         }
 
         public void OnSpeechUnrecognised()

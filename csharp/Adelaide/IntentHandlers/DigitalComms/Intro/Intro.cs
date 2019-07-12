@@ -1,10 +1,8 @@
-﻿using Adelaide.Infrastructure;
-using Microsoft.CognitiveServices.Speech.Intent;
+﻿using Microsoft.CognitiveServices.Speech.Intent;
 
-
-namespace Adelaide.IntentHandlers.DigitalComms.Opening
+namespace Adelaide.IntentHandlers.DigitalComms
 {
-    public class Intro
+    public class Intro : Handler
     {
         public static string[] speeches = {
                 "GetScriptReady",
@@ -12,11 +10,22 @@ namespace Adelaide.IntentHandlers.DigitalComms.Opening
                 "PrepareCommsScript"
             };
 
-        public static void Act(IntentRecognitionResult intent)
-        {
-            var playList = (path: @"IntentHandlers\DigitalComms\Intro", speeches);
+        public Speaking speaking;
 
-            Utils.PlayOneFrom(playList);
+        public Intro()
+        {
+            handlerName = "Intro";
+
+            intentsToHandle.Add("ASB-Digital-comms-opening");
+
+            speaking = new Speaking(speeches);
+        }
+
+        public override void Do(IntentRecognitionResult intent)
+        {
+            speaking.Speak(handlerName, belongsToSkill);
+
+            base.Do(intent);
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using Adelaide.IntentHandlers.DigitalComms;
+using Adelaide.IntentHandlers.Sleep;
+using Adelaide.IntentHandlers.Wake;
 using Microsoft.CognitiveServices.Speech.Intent;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +15,16 @@ namespace Adelaide.IntentHandlers
 
         public SkillSet()
         {
+            skills.Add(new WakeSkill());
+
+            skills.Add(new SleepSkill());
+
             skills.Add(new DigitalCommsSkill());
         }
 
         public void Handle(IntentRecognitionResult intent)
         {
-            List<Handler> handlers = null;
+            List<Handler> handlers = new List<Handler>();
 
             skills.ForEach(skill =>
                 handlers.AddRange(

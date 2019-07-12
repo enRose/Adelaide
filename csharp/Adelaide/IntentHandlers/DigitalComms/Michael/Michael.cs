@@ -1,51 +1,85 @@
 ﻿using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-namespace Adelaide.IntentHandlers.DigitalComms.Michael
+namespace Adelaide.IntentHandlers.DigitalComms
 {
-    public class Michael
+    public class Michael : Handler
     {
-        private static string folderPath = @"IntentHandlers\DigitalComms\Michael";
+        public Speaking speaking;
 
-        public static void TeamPerf(IntentRecognitionResult intent)
+        public Michael()
         {
-            Utils.Play("TeamPerf", folderPath);
+            handlerName = this.GetType().Name;
+
+            intentsToHandle.Add("team-perf");
+
+            intentsToHandle.Add("highlight");
+
+            intentsToHandle.Add("squad-mvp");
+
+            intentsToHandle.Add("buy-me-dinner");
+
+            intentsToHandle.Add("be-serious");
+
+            intentsToHandle.Add("enjoyed-most");
+
+            intentsToHandle.Add("still-need-Host-RCU");
+
+            intentsToHandle.Add("existential-crisis");
+
+            speaking = new Speaking();
+
         }
 
-        public static void Highlight(IntentRecognitionResult intent)
+        public override void Do(IntentRecognitionResult intent)
         {
-            Utils.Play("Highlight", folderPath);
-        }
+            var soundFileName = "";
+            switch (intent.IntentId)
+            {
+                case "team-perf":
+                    soundFileName = "TeamPerf";
+                    break;
 
-        public static void SquadMvp(IntentRecognitionResult intent)
-        {
-            Utils.Play("SquadMvp", folderPath);
-        }
+                case "highlight":
+                    soundFileName = "Highlight";
+                    break;
 
-        public static void BuyMeDinner(IntentRecognitionResult intent)
-        {
-            Utils.Play("BuyMeDinner", folderPath);
-        }
+                case "squad-mvp":
+                    soundFileName = "SquadMvp";
+                    break;
 
-        public static void BeSerious(IntentRecognitionResult intent)
-        {
-            Utils.Play("BeSerious", folderPath);
-        }
+                case "buy-me-dinner":
+                    soundFileName = "BuyMeDinner";
+                    break;
 
-        public static void EnjoyedMost(IntentRecognitionResult intent)
-        {
-            Utils.Play("EnjoyedMost", folderPath);
-        }
+                case "be-serious":
+                    soundFileName = "BeSerious";
+                    break;
 
-        public static void StillNeedHostRCU(IntentRecognitionResult intent)
-        {
-            Utils.Play("StillNeedHostRCU", folderPath);
-        }
+                case "enjoyed-most":
+                    soundFileName = "EnjoyedMost";
+                    break;
 
-        public static void ExistentialCrisis(IntentRecognitionResult intent)
-        {
-            Utils.Play("ExistentialCrisis", folderPath);
-        }
+                case "still-need-Host-RCU":
+                    soundFileName = "StillNeedHostRCU";
+                    break;
 
+                case "existential-crisis":
+                    soundFileName = "ExistentialCrisis";
+                    break;
+
+                default:
+                    break;
+            }
+
+            if (soundFileName == "")
+            {
+                return;
+            }
+
+            speaking.Speak(soundFileName, handlerName, belongsToSkill);
+
+            base.Do(intent);
+        }
     }
 }

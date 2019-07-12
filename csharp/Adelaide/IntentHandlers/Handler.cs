@@ -1,4 +1,5 @@
 ﻿using Microsoft.CognitiveServices.Speech.Intent;
+using System.Collections.Generic;
 
 namespace Adelaide.IntentHandlers
 {
@@ -8,11 +9,11 @@ namespace Adelaide.IntentHandlers
 
         public string handlerName;
 
-        public string intentToHandle;
+        public List<string> intentsToHandle = new List<string>();
 
         public virtual bool CanHandle(IntentRecognitionResult intent)
         {
-            return intent.IntentId == intentToHandle;
+            return intentsToHandle.Contains(intent.IntentId);
         }
 
         public virtual void Do(IntentRecognitionResult intent)

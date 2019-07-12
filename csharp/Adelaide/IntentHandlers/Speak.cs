@@ -25,5 +25,14 @@ namespace Adelaide.IntentHandlers
 
             return true;
         }
+
+        public virtual bool Speak(string soundFileName, string handlerName, string skillName)
+        {
+            var path = rootFolderName + "\\" + skillName + "\\" + handlerName;
+
+            Utils.Play(soundFileName, path);
+
+            return true;
+        }
     }
 }

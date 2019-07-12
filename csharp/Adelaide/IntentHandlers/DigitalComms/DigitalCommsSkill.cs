@@ -9,7 +9,11 @@ namespace Adelaide.IntentHandlers.DigitalComms
         {
             skillName = "DigitalComms";
 
+            handlers.Add(new Intro());
+
             handlers.Add(new Rommel());
+
+            handlers.Add(new Michael());
 
             handlers.BelongTo(skillName);
         }

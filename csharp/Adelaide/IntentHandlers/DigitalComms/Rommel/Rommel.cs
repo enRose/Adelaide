@@ -14,7 +14,7 @@ namespace Adelaide.IntentHandlers.DigitalComms
         {
             handlerName = "Rommel";
 
-            intentToHandle = "Rommel";
+            intentsToHandle.Add("Rommel");
 
             speaking = new Speaking(speeches);
         }

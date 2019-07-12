@@ -1,10 +1,9 @@
-using Adelaide.Infrastructure;
+﻿using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-
-namespace Adelaide.IntentHandlers
+namespace Adelaide.IntentHandlers.Sleep
 {
-    public static class Sleep
+    public class SleepHandler : Handler
     {
         public static string[] speeches = {
                 "GoInStandByMode",
@@ -12,11 +11,18 @@ namespace Adelaide.IntentHandlers
                 "SignOut"
             };
 
-        public static void Act(IntentRecognitionResult intent)
+        public SleepHandler()
+        {
+            intentsToHandle.Add("sleep");
+        }
+
+        public override void Do(IntentRecognitionResult intent)
         {
             Memory.Sleep = true;
 
             Utils.PlayOneOf(speeches, "IntentHandlers\\Sleep");
+
+            base.Do(intent);
         }
     }
 }
