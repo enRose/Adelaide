@@ -1,19 +1,29 @@
-﻿using Adelaide.Infrastructure;
-using Microsoft.CognitiveServices.Speech.Intent;
+﻿using Microsoft.CognitiveServices.Speech.Intent;
 
-
-namespace Adelaide.IntentHandlers.DigitalComms.Rommel
+namespace Adelaide.IntentHandlers.DigitalComms
 {
-    public class Rommel
+    public class Rommel : Handler
     {
         public static string[] speeches = {
                 "GoodJob"
             };
 
-        public static void Act(IntentRecognitionResult intent)
+        public Speaking speaking;
+
+        public Rommel()
         {
-            Utils.PlayOneOf(speeches, @"IntentHandlers\DigitalComms\Rommel");
+            handlerName = "Rommel";
+
+            intentToHandle = "Rommel";
+
+            speaking = new Speaking(speeches);
+        }
+
+        public override void Do(IntentRecognitionResult intent)
+        {
+            speaking.Speak(handlerName, belongsToSkill);
+
+            base.Do(intent);
         }
     }
 }
- 

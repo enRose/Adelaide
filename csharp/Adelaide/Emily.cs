@@ -7,12 +7,16 @@ namespace Adelaide
 {
     public class Emily
     {
+        private readonly SkillSet skills = new SkillSet();
+
         public void OnIntentRecognised(IntentRecognitionResult intent)
-        {
-            if (ConversationContext.Sleep == true && intent.IntentId != "Wake")
+        { 
+            if (Memory.Sleep == true && intent.IntentId != "Wake")
             {
                 return;
             }
+
+
 
             if (IntentHandlerLocator.Map.TryGetValue(intent.IntentId, out Action<IntentRecognitionResult> actOn))
             {
@@ -22,7 +26,7 @@ namespace Adelaide
 
         public void OnSpeechUnrecognised()
         {
-            if (ConversationContext.Sleep == true)
+            if (Memory.Sleep == true)
             {
                 return;
             }

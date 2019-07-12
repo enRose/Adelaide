@@ -14,7 +14,7 @@ namespace Adelaide.IntentHandlers
 
         public static void Act(IntentRecognitionResult intent)
         {
-            ConversationContext.Sleep = true;
+            Memory.Sleep = true;
 
             Utils.PlayOneOf(speeches, "IntentHandlers\\Sleep");
         }
