@@ -1,5 +1,4 @@
-﻿using Adelaide.Infrastructure;
-using Microsoft.CognitiveServices.Speech.Intent;
+﻿using Microsoft.CognitiveServices.Speech.Intent;
 
 namespace Adelaide.IntentHandlers.DigitalComms
 {
@@ -11,24 +10,31 @@ namespace Adelaide.IntentHandlers.DigitalComms
         {
             handlerName = this.GetType().Name;
 
-            intentsToHandle.Add("team-perf");
+            intentsToHandle.Add("ASB-digital-comms-team-perf");
 
-            intentsToHandle.Add("highlight");
+            intentsToHandle.Add("ASB-digital-comms-highlight");
 
-            intentsToHandle.Add("squad-mvp");
+            intentsToHandle.Add("ASB-digital-comms-squad-mvp");
 
-            intentsToHandle.Add("buy-me-dinner");
+            intentsToHandle.Add("ASB-digital-comms-my-perf");
 
-            intentsToHandle.Add("be-serious");
+            intentsToHandle.Add("ASB-digital-comms-be-serious");
 
-            intentsToHandle.Add("enjoyed-most");
+            intentsToHandle.Add("ASB-digital-comms-enjoyed-most");
 
-            intentsToHandle.Add("still-need-Host-RCU");
+            intentsToHandle.Add("ASB-digital-comms-still-need-host-RCU");
 
-            intentsToHandle.Add("existential-crisis");
+            intentsToHandle.Add("ASB-digital-comms-existential-crisis");
+
+            intentsToHandle.Add("ASB-digital-comms-emily-creation");
+
+            intentsToHandle.Add("ASB-digital-comms-financial-climate");
+
+            intentsToHandle.Add("ASB-digital-comms-terminator");
+
+            intentsToHandle.Add("ASB-digital-comms-universe-muscles");
 
             speaking = new Speaking();
-
         }
 
         public override void Do(IntentRecognitionResult intent)
@@ -36,36 +42,52 @@ namespace Adelaide.IntentHandlers.DigitalComms
             var soundFileName = "";
             switch (intent.IntentId)
             {
-                case "team-perf":
+                case "ASB-digital-comms-team-perf":
                     soundFileName = "TeamPerf";
                     break;
 
-                case "highlight":
+                case "ASB-digital-comms-highlight":
                     soundFileName = "Highlight";
                     break;
 
-                case "squad-mvp":
+                case "ASB-digital-comms-squad-mvp":
                     soundFileName = "SquadMvp";
                     break;
 
-                case "buy-me-dinner":
+                case "ASB-digital-comms-my-perf":
                     soundFileName = "BuyMeDinner";
                     break;
 
-                case "be-serious":
+                case "ASB-digital-comms-be-serious":
                     soundFileName = "BeSerious";
                     break;
 
-                case "enjoyed-most":
+                case "ASB-digital-comms-enjoyed-most":
                     soundFileName = "EnjoyedMost";
                     break;
 
-                case "still-need-Host-RCU":
+                case "ASB-digital-comms-still-need-host-RCU":
                     soundFileName = "StillNeedHostRCU";
                     break;
 
-                case "existential-crisis":
+                case "ASB-digital-comms-existential-crisis":
                     soundFileName = "ExistentialCrisis";
+                    break;
+
+                case "ASB-digital-comms-emily-creation":
+                    soundFileName = "EmilyCreation";
+                    break;
+
+                case "ASB-digital-comms-financial-climate":
+                    soundFileName = "MachineOverLords";
+                    break;
+
+                case "ASB-digital-comms-terminator":
+                    soundFileName = "Terminator";
+                    break;
+
+                case "ASB-digital-comms-universe-muscles":
+                    soundFileName = "MrUniverseMuscles";
                     break;
 
                 default:

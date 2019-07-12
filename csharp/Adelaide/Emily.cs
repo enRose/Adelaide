@@ -10,7 +10,7 @@ namespace Adelaide
 
         public void OnIntentRecognised(IntentRecognitionResult intent)
         { 
-            if (Memory.Sleep == true && intent.IntentId != "Wake")
+            if (Memory.Sleep == true && intent.IntentId != "wake")
             {
                 return;
             }

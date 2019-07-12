@@ -44,12 +44,15 @@ Listen, I’m the captain now. And we are going to rewrite RCU on tribe day.
 Emily, now that the Financial year is over, I’m having an existential crisis, can you help me?
 I’m just a robot, get a grip man.
 
-Emily, what are you looking forward to most over the next financial year?
-I hear there is a new chatbot arriving.. well hello.
+
+//////////////////////////////////////////////////////////////////////////
+//Emily, what are you looking forward to most over the next financial year?
+//I hear there is a new chatbot arriving.. well hello.
+//////////////////////////////////////////////////////////////////////////
 
 
-Emily, why did Yini create you? 
-A robogirl never tells
+Emily, why did we create you? 
+Because CSS is much harder than moon landing.
 
  
 Emily, what do you think of the current financial climate?

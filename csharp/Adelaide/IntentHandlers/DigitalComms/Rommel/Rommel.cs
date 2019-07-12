@@ -14,7 +14,7 @@ namespace Adelaide.IntentHandlers.DigitalComms
         {
             handlerName = "Rommel";
 
-            intentsToHandle.Add("Rommel");
+            intentsToHandle.Add("ASB-digital-comms-rommel");
 
             speaking = new Speaking(speeches);
         }
