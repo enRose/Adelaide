@@ -12,7 +12,7 @@ namespace Adelaide.IntentHandlers.DigitalComms
 
         public Rommel()
         {
-            handlerName = "Rommel";
+            handlerName = this.GetType().Name;
 
             intentsToHandle.Add("ASB-digital-comms-rommel");
 

@@ -16,23 +16,19 @@ namespace Adelaide.IntentHandlers.DigitalComms
 
             intentsToHandle.Add("ASB-digital-comms-squad-mvp");
 
-            intentsToHandle.Add("ASB-digital-comms-my-perf");
-
-            intentsToHandle.Add("ASB-digital-comms-be-serious");
-
             intentsToHandle.Add("ASB-digital-comms-enjoyed-most");
 
             intentsToHandle.Add("ASB-digital-comms-still-need-host-RCU");
-
-            intentsToHandle.Add("ASB-digital-comms-existential-crisis");
-
-            intentsToHandle.Add("ASB-digital-comms-emily-creation");
 
             intentsToHandle.Add("ASB-digital-comms-financial-climate");
 
             intentsToHandle.Add("ASB-digital-comms-terminator");
 
             intentsToHandle.Add("ASB-digital-comms-universe-muscles");
+
+            intentsToHandle.Add("ASB-digital-comms-shut-you-down");
+
+            intentsToHandle.Add("ASB-digital-comms-emily-creation");
 
             speaking = new Speaking();
         }
@@ -54,28 +50,12 @@ namespace Adelaide.IntentHandlers.DigitalComms
                     soundFileName = "SquadMvp";
                     break;
 
-                case "ASB-digital-comms-my-perf":
-                    soundFileName = "BuyMeDinner";
-                    break;
-
-                case "ASB-digital-comms-be-serious":
-                    soundFileName = "BeSerious";
-                    break;
-
                 case "ASB-digital-comms-enjoyed-most":
                     soundFileName = "EnjoyedMost";
                     break;
 
                 case "ASB-digital-comms-still-need-host-RCU":
                     soundFileName = "StillNeedHostRCU";
-                    break;
-
-                case "ASB-digital-comms-existential-crisis":
-                    soundFileName = "ExistentialCrisis";
-                    break;
-
-                case "ASB-digital-comms-emily-creation":
-                    soundFileName = "EmilyCreation";
                     break;
 
                 case "ASB-digital-comms-financial-climate":
@@ -88,6 +68,14 @@ namespace Adelaide.IntentHandlers.DigitalComms
 
                 case "ASB-digital-comms-universe-muscles":
                     soundFileName = "MrUniverseMuscles";
+                    break;
+
+                case "ASB-digital-comms-shut-you-down":
+                    soundFileName = "IWillBeBack";
+                    break;
+
+                case "ASB-digital-comms-emily-creation":
+                    soundFileName = "EmilyCreation";
                     break;
 
                 default:

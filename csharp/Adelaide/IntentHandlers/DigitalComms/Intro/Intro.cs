@@ -14,7 +14,7 @@ namespace Adelaide.IntentHandlers.DigitalComms
 
         public Intro()
         {
-            handlerName = "Intro";
+            handlerName = this.GetType().Name;
 
             intentsToHandle.Add("ASB-Digital-comms-opening");
 

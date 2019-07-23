@@ -32,7 +32,7 @@ namespace Adelaide
 
             if (intentJsonModel.TopScoringIntent != null)
             {
-                return intentJsonModel.TopScoringIntent.Score > 0.8;
+                return intentJsonModel.TopScoringIntent.Score > 0.75;
             }
 
             return false;
