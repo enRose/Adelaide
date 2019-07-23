@@ -1,6 +1,8 @@
 using Adelaide.IntentHandlers;
 using Adelaide.Unexpected;
+using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Intent;
+using Newtonsoft.Json;
 
 namespace Adelaide
 {
@@ -15,7 +17,25 @@ namespace Adelaide
                 return;
             }
 
-            skills.Handle(intent);
+            if (IsHighEnoughCcore(intent))
+            {
+                skills.Handle(intent);
+            }
+        }
+
+        public bool IsHighEnoughCcore(IntentRecognitionResult intent)
+        {
+            var json = intent.Properties.GetProperty(
+                                 PropertyId.LanguageUnderstandingServiceResponse_JsonResult);
+
+            var intentJsonModel = JsonConvert.DeserializeObject<IntentJsonModel>(json);
+
+            if (intentJsonModel.TopScoringIntent != null)
+            {
+                return intentJsonModel.TopScoringIntent.Score > 0.8;
+            }
+
+            return false;
         }
 
         public void OnSpeechUnrecognised()
