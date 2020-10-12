@@ -20,7 +20,8 @@ namespace Adelaide.TTS
             string accessToken;
             Console.WriteLine("Attempting token exchange. Please wait...\n");
 
-            Authentication auth = new Authentication(Config.TTSAuthUrl, Config.TTSKey);
+            Authentication auth = new Authentication(
+                Secret.TTSAuthUrl, Secret.TTSKey);
 
             try
             {

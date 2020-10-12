@@ -9,9 +9,10 @@ namespace Adelaide.Infrastructure
 
         public IntentRegonisor()
         {
-            var config = SpeechConfig.FromSubscription(Config.LuisKey, Config.Region);
+            var config = SpeechConfig.FromSubscription(
+                Secret.LuisPredictionKey, Secret.Region);
 
-            var model = LanguageUnderstandingModel.FromAppId(Config.LuisAppId);
+            var model = LanguageUnderstandingModel.FromAppId(Secret.LuisAppId);
 
             recognizer = new IntentRecognizer(config);
 

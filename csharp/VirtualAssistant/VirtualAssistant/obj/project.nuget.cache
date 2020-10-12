@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GvO4iCKEZb6Q76w3S0aUsrQ1pyLpgoVVtMWJHQIXPJ/lNP3YjKH3pYEyMQ1LdBuvs4J0XlAjX7Ii5VCiM8wZSQ==",
+  "success": true,
+  "projectFilePath": "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
+  "expectedPackageFiles": [
+    "/Users/yiniyin/.nuget/packages/microsoft.cognitiveservices.speech/1.7.0/microsoft.cognitiveservices.speech.1.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

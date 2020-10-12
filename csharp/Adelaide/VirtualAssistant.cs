@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace Adelaide
 {
-    public class Emily
+    public class VirtualAssistant
     {
         private readonly SkillSet skills = new SkillSet();
 
@@ -26,7 +26,7 @@ namespace Adelaide
         public bool IsHighEnoughCcore(IntentRecognitionResult intent)
         {
             var json = intent.Properties.GetProperty(
-                                 PropertyId.LanguageUnderstandingServiceResponse_JsonResult);
+                PropertyId.LanguageUnderstandingServiceResponse_JsonResult);
 
             var intentJsonModel = JsonConvert.DeserializeObject<IntentJsonModel>(json);
 

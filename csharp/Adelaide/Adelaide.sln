@@ -1,0 +1,41 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adelaide", "Adelaide.csproj", "{21273872-0B49-4704-B2F3-3DD44EEF0ADF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Debug|Win32 = Debug|Win32
+		Release|ARM64 = Release|ARM64
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|ARM64.Build.0 = Debug|ARM64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|ARM.Build.0 = Debug|ARM
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|x64.ActiveCfg = Debug|x64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|x64.Build.0 = Debug|x64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|x86.ActiveCfg = Debug|x86
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|x86.Build.0 = Debug|x86
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Debug|Win32.Build.0 = Debug|Win32
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|ARM64.ActiveCfg = Release|ARM64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|ARM64.Build.0 = Release|ARM64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|ARM.ActiveCfg = Release|ARM
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|ARM.Build.0 = Release|ARM
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|x64.ActiveCfg = Release|x64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|x64.Build.0 = Release|x64
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|x86.ActiveCfg = Release|x86
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|x86.Build.0 = Release|x86
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|Win32.ActiveCfg = Release|Win32
+		{21273872-0B49-4704-B2F3-3DD44EEF0ADF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+EndGlobal

@@ -2,27 +2,27 @@ using System;
 using Adelaide.Infrastructure;
 using Microsoft.CognitiveServices.Speech;
 
-
 namespace Adelaide
 {
     public class Start
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var recognizer = new IntentRegonisor();
 
-            var emily = new Emily();
+            var persona = new VirtualAssistant();
 
             Console.WriteLine("Say something...");
 
             do
             {
-                Recognise(recognizer, emily);
+                Recognise(recognizer, persona);
             }
             while (true);
         }
 
-        public static void Recognise(IntentRegonisor recognizer, Emily emily)
+        public static void Recognise(
+            IntentRegonisor recognizer, VirtualAssistant persona)
         {
             var result = recognizer.RecognizeOnce();
 
@@ -32,7 +32,7 @@ namespace Adelaide
 
                     Logger.OnIntentRecognised(result);
 
-                    emily.OnIntentRecognised(result);
+                    persona.OnIntentRecognised(result);
 
                     break;
 
@@ -42,8 +42,7 @@ namespace Adelaide
 
                     break;
 
-                case ResultReason.NoMatch:
-
+                default:
                     Logger.OnSpeechUnrecognised();
 
                     break;

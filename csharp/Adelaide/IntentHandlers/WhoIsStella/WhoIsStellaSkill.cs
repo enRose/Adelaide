@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Adelaide.IntentHandlers.WhoIsEmily
+namespace Adelaide.IntentHandlers.WhoIsStella
 {
-    public class WhoIsEmilyContext
+    public class WhoIsStella
     {
     }
 }
