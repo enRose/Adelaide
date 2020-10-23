@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
+using VirtualAssistant.Utilities;
 
 namespace VirtualAssistant.VA
 {
@@ -14,7 +15,7 @@ namespace VirtualAssistant.VA
         public TextToSpeech()
         {
             config = SpeechConfig.FromSubscription(
-                Secret.LuisPredictionKey, Secret.Region);
+                Secret.TextToSpeechSubKey, Secret.Region);
         }
 
         public async Task Speak(string txt)
@@ -23,22 +24,7 @@ namespace VirtualAssistant.VA
 
             var result = await synthesizer.SpeakTextAsync(txt);
 
-            if (result.Reason == ResultReason.SynthesizingAudioCompleted)
-            {
-                Console.WriteLine($"Speech synthesized to speaker for text [{txt}]");
-            }
-            else if (result.Reason == ResultReason.Canceled)
-            {
-                var cancellation = SpeechSynthesisCancellationDetails.FromResult(result);
-                Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
-
-                if (cancellation.Reason == CancellationReason.Error)
-                {
-                    Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
-                    Console.WriteLine($"CANCELED: ErrorDetails=[{cancellation.ErrorDetails}]");
-                    Console.WriteLine($"CANCELED: Did you update the subscription info?");
-                }
-            }
+            Logger.OnTextToSpeechFinished(result, txt);
         }
     }
 }

@@ -46,5 +46,26 @@ namespace VirtualAssistant.Utilities
             Console.WriteLine("\n    Session stopped event.");
             Console.WriteLine("\nStop recognition.");
         }
+
+        public static void OnTextToSpeechFinished(
+            SpeechSynthesisResult result, string txt)
+        {
+            if (result.Reason == ResultReason.SynthesizingAudioCompleted)
+            {
+                Console.WriteLine($"Speech synthesized to speaker for text [{txt}]");
+            }
+            else if (result.Reason == ResultReason.Canceled)
+            {
+                var cancellation = SpeechSynthesisCancellationDetails.FromResult(result);
+                Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
+
+                if (cancellation.Reason == CancellationReason.Error)
+                {
+                    Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
+                    Console.WriteLine($"CANCELED: ErrorDetails=[{cancellation.ErrorDetails}]");
+                    Console.WriteLine($"CANCELED: Did you update the subscription info?");
+                }
+            }
+        }
     }
 }
