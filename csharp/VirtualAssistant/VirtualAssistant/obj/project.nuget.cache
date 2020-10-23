@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GvO4iCKEZb6Q76w3S0aUsrQ1pyLpgoVVtMWJHQIXPJ/lNP3YjKH3pYEyMQ1LdBuvs4J0XlAjX7Ii5VCiM8wZSQ==",
+  "dgSpecHash": "FAKl7ocXvR8UqqA7wmvPd+GjOG9kS5ReU1XWWEDbIS0cpl/EZ6D15MQU/BEi81QVhkcpN3yM00WMk+VGq5cKaA==",
   "success": true,
-  "projectFilePath": "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
+  "projectFilePath": "/Users/datacom/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
   "expectedPackageFiles": [
-    "/Users/yiniyin/.nuget/packages/microsoft.cognitiveservices.speech/1.7.0/microsoft.cognitiveservices.speech.1.7.0.nupkg.sha512"
+    "/Users/datacom/.nuget/packages/microsoft.cognitiveservices.speech/1.8.0/microsoft.cognitiveservices.speech.1.8.0.nupkg.sha512"
   ],
   "logs": []
 }

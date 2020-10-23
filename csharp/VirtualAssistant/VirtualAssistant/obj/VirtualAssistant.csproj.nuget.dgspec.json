@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj": {}
+    "/Users/datacom/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj": {}
   },
   "projects": {
-    "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj": {
+    "/Users/datacom/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
+        "projectUniqueName": "/Users/datacom/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
         "projectName": "VirtualAssistant",
-        "projectPath": "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
-        "packagesPath": "/Users/yiniyin/.nuget/packages/",
-        "outputPath": "/Users/yiniyin/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/obj/",
+        "projectPath": "/Users/datacom/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/VirtualAssistant.csproj",
+        "packagesPath": "/Users/datacom/.nuget/packages/",
+        "outputPath": "/Users/datacom/Projects/Adelaide/csharp/VirtualAssistant/VirtualAssistant/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/yiniyin/.config/NuGet/NuGet.Config"
+          "/Users/datacom/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,7 +41,7 @@
           "dependencies": {
             "Microsoft.CognitiveServices.Speech": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.8.0, )"
             }
           },
           "imports": [

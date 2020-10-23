@@ -1,5 +1,4 @@
-﻿using System;
-using VirtualAssistant.VA;
+﻿using VirtualAssistant.VA.Rebeka;
 
 namespace VirtualAssistant
 {
@@ -7,17 +6,13 @@ namespace VirtualAssistant
     {
         static void Main(string[] args)
         {
-            var luis = new Luis();
+            var rebeka = new Rebeka();
 
-            Console.WriteLine("Virtual assistant started...");
-
-            luis.RecognitionWithMicrophoneAsync().Wait();
-
-            //do
-            //{
-            //    luis.RecognitionWithMicrophoneAsync();
-            //}
-            //while (true);
+            do
+            {
+                rebeka.Run();
+            }
+            while (true);
         }
     }
 }
