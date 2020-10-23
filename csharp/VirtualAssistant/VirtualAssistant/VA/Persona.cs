@@ -26,5 +26,8 @@ namespace VirtualAssistant.VA
             Console.WriteLine($"{this.GetType().Name} does not have the skill to" +
                 $" handle intent {result.IntentId}");
         }
+
+        public virtual string OneOf(string[] replies) =>           
+           replies[new Random().Next(0, replies.Length - 1)];
     }
 }

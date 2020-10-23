@@ -34,13 +34,12 @@ namespace VirtualAssistant.VA.Rebeka
                 "Hi, I'm Rebeka. I am a Zing bot.",
 
                 "Hi, I'm Rebeka, I am a bot and that's all I can say. " +
-                "If you want to know more about me, please ask Cards Y."
+                "If you want to know more about me, please ask Cards Y.",
+
+                "Haha, I am funny, I am curious and I am constantly improving!",
             };
 
-            var rnd = new Random();
-            int indx = rnd.Next(0, replies.Length-1);
-
-            textToSpeech.Speak(replies[indx]).Wait();
+            textToSpeech.Speak(OneOf(replies)).Wait();
         }
     }
 }

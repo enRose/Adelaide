@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{4DD98FD9-0937-4FAF-9D39-9E03BB771A9E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/TextToSpeech.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/Rebeka/Rebeka.cs">
     <Files>
-      <File FileName="VirtualAssistant/VA/TextToSpeech.cs" Line="27" Column="54" />
-      <File FileName="VirtualAssistant/VA/Rebeka/Rebeka.cs" Line="1" Column="1" />
+      <File FileName="VirtualAssistant/VA/Rebeka/Rebeka.cs" Line="42" Column="36" />
+      <File FileName="VirtualAssistant/VA/Persona.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="VirtualAssistant" expanded="True" selected="True">
+          <Node name="VirtualAssistant" expanded="True">
             <Node name="VirtualAssistant" expanded="True">
               <Node name="Utilities" expanded="True" />
               <Node name="VA" expanded="True">
-                <Node name="Rebeka" expanded="True" />
+                <Node name="Rebeka" expanded="True">
+                  <Node name="Rebeka.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
