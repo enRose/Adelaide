@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{4DD98FD9-0937-4FAF-9D39-9E03BB771A9E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/Secret.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/TextToSpeech.cs">
     <Files>
       <File FileName="VirtualAssistant/VA/Persona.cs" Line="27" Column="54" />
       <File FileName="VirtualAssistant/VA/TextToSpeech.cs" Line="24" Column="45" />
-      <File FileName="VirtualAssistant/VA/Secret.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +10,7 @@
           <Node name="VirtualAssistant" expanded="True">
             <Node name="VirtualAssistant" expanded="True">
               <Node name="VA" expanded="True">
-                <Node name="Secret.cs" selected="True" />
+                <Node name="TextToSpeech.cs" selected="True" />
               </Node>
             </Node>
           </Node>
