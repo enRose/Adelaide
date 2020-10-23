@@ -6,3 +6,6 @@ nodejs/tts.js
 nodejs/TTSOutput.wav
 
 Secret.*
+csharp/VirtualAssistant/VirtualAssistant/VA/Secret.cs
+csharp/VirtualAssistant/VirtualAssistant/bin/
+csharp/VirtualAssistant/VirtualAssistant/obj/
