@@ -23,11 +23,15 @@ namespace VirtualAssistant.VA
 
         public virtual void HandleSkillNotFound(IntentRecognitionResult result)
         {
-            Console.WriteLine($"{this.GetType().Name} does not have the skill to" +
+            Console.WriteLine($"{GetType().Name} does not have the skill to" +
                 $" handle intent {result.IntentId}");
         }
 
         public virtual string OneOf(string[] replies) =>           
            replies[new Random().Next(0, replies.Length - 1)];
+
+        public virtual void LogSkillExecuteBegins(IntentRecognitionResult result)
+        => Console.WriteLine($"{GetType().Name} handling intent {result.IntentId}");
+        
     }
 }
