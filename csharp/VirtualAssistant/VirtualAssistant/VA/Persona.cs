@@ -25,6 +25,18 @@ namespace VirtualAssistant.VA
         {
             Console.WriteLine($"{GetType().Name} does not have the skill to" +
                 $" handle intent {result.IntentId}");
+
+            var replies = new string[] {
+                "Sorry, I didn't understand what you mean by that.",
+
+                "I beg your pardon, could you please repeat that again?",
+
+                "Sorry, I didn't quite get what you say.",
+
+                "Sorry, could you please repeat that again?",
+            };
+
+            textToSpeech.Speak(OneOf(replies)).Wait();
         }
 
         public virtual string OneOf(string[] replies) =>           

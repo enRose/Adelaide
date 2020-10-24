@@ -45,14 +45,12 @@ namespace VirtualAssistant.VA.Rebeka
         public void Zing(IntentRecognitionResult result)
         {
             var replies = new string[] {
-                "Hi everyone, I am a spokewoman that does comms for my team.",
+                "Everyone is working hard this week, especially me.",
 
-                "Hi, I'm Rebeka. I am a Zing bot.",
-
-                "Hi, I'm Rebeka, I am a bot and that's all I can say. " +
-                "If you want to know more about me, please ask Cards Y.",
-
-                "Ha ha, I am funny, I am curious, and I am constantly improving!",
+                "UM is about to be finished, Rommel started on Bento Box this sprint," +
+                "James is making good progress on Instant Issuance, whle Trevor busy" +
+                "attending a ton of meetings Yini and Mike are busy on personal loan and " +
+                "production faults",
             };
 
             textToSpeech.Speak(OneOf(replies)).Wait();
