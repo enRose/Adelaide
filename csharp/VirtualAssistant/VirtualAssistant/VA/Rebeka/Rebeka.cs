@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.CognitiveServices.Speech.Intent;
+using VirtualAssistant.Utility;
 
 namespace VirtualAssistant.VA.Rebeka
 {
@@ -7,12 +8,15 @@ namespace VirtualAssistant.VA.Rebeka
     {
         public Rebeka()
         {
-            skills.Add("WhoIsRebeka", WhoIsRebeka);
+            AddSkill(WhoIsRebeka);
+            AddSkill(Zing);
         }
 
         public override void Handle(IntentRecognitionResult result)
         {
-            if (skills.TryGetValue(result.IntentId,
+            if (luis.IsHighEnoughScore(result) &&
+
+                skills.TryGetValue(result.IntentId,
                  out Action<IntentRecognitionResult> skill
              ))
             {
@@ -23,7 +27,10 @@ namespace VirtualAssistant.VA.Rebeka
                 return;
             }
 
-            HandleSkillNotFound(result);
+            if (luis.IsHighEnoughScore(result, 0.5))
+            {
+                AskUserToRepeatQuestion(result);
+            }
         }
 
         public void WhoIsRebeka(IntentRecognitionResult result)
@@ -39,7 +46,7 @@ namespace VirtualAssistant.VA.Rebeka
                 "Ha ha, I am funny, I am curious, and I am constantly improving!",
             };
 
-            textToSpeech.Speak(OneOf(replies)).Wait();
+            Speak(replies.OneOf());
         }
 
         public void Zing(IntentRecognitionResult result)
@@ -53,7 +60,7 @@ namespace VirtualAssistant.VA.Rebeka
                 "production faults",
             };
 
-            textToSpeech.Speak(OneOf(replies)).Wait();
+            Speak(replies.OneOf());
         }
     }
 }

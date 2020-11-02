@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Text.Json;
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Intent;
-using VirtualAssistant.Utilities;
+using VirtualAssistant.Utility;
 
-namespace VirtualAssistant.VA
+namespace VirtualAssistant.VA.Luis
 {
     public class Luis
     {
         private readonly IntentRecognizer recognizer;
-        private SpeechConfig speechConfig;
+        private readonly SpeechConfig speechConfig;
         
         public Luis()
         {
@@ -56,6 +57,28 @@ namespace VirtualAssistant.VA
 
                     break;
             }
+        }
+
+        public bool IsHighEnoughScore(
+            IntentRecognitionResult intent,
+            double threshold = 0.75)
+        {
+            var intentModel = Deserialize<IntentResultModel>(intent);
+
+            if (intentModel.TopScoringIntent != null)
+            {
+                return intentModel.TopScoringIntent.Score > threshold;
+            }
+
+            return false;
+        }
+
+        public T Deserialize<T>(IntentRecognitionResult intent)
+        {
+            var json = intent.Properties.GetProperty(
+                PropertyId.LanguageUnderstandingServiceResponse_JsonResult);
+
+            return JsonSerializer.Deserialize<T>(json);
         }
     }
 }

@@ -2,7 +2,7 @@
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Intent;
 
-namespace VirtualAssistant.Utilities
+namespace VirtualAssistant.Utility
 {
     public class Logger
     {

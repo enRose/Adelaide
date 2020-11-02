@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
-using VirtualAssistant.Utilities;
+using VirtualAssistant.Utility;
 
 namespace VirtualAssistant.VA
 {

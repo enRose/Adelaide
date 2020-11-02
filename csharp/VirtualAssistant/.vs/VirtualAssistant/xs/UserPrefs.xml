@@ -1,20 +1,23 @@
 ﻿<Properties StartupConfiguration="{4DD98FD9-0937-4FAF-9D39-9E03BB771A9E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/Rebeka/Rebeka.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/Luis/Luis.cs">
     <Files>
-      <File FileName="VirtualAssistant/VA/Rebeka/Rebeka.cs" Line="46" Column="10" />
-      <File FileName="VirtualAssistant/VA/Persona.cs" Line="37" Column="15" />
+      <File FileName="VirtualAssistant/VA/Rebeka/Rebeka.cs" Line="25" Column="31" />
+      <File FileName="VirtualAssistant/VA/Persona.cs" Line="18" Column="37" />
+      <File FileName="VirtualAssistant/VA/Luis/Luis.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
           <Node name="VirtualAssistant" expanded="True">
+            <Node name=".vs" expanded="True" />
             <Node name="VirtualAssistant" expanded="True">
-              <Node name="Utilities" expanded="True" />
+              <Node name="Utility" expanded="True" />
               <Node name="VA" expanded="True">
-                <Node name="Rebeka" expanded="True">
-                  <Node name="Rebeka.cs" selected="True" />
+                <Node name="Luis" expanded="True">
+                  <Node name="Luis.cs" selected="True" />
                 </Node>
+                <Node name="Rebeka" expanded="True" />
               </Node>
             </Node>
           </Node>
