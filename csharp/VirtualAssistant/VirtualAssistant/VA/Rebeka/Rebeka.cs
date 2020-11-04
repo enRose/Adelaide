@@ -14,7 +14,7 @@ namespace VirtualAssistant.VA.Rebeka
 
         public override void Handle(IntentRecognitionResult result)
         {
-            if (luis.IsHighEnoughScore(result) &&
+            if (luis.IsHighEnoughScore(result, 0.8) &&
 
                 skills.TryGetValue(result.IntentId,
                  out Action<IntentRecognitionResult> skill
@@ -27,7 +27,7 @@ namespace VirtualAssistant.VA.Rebeka
                 return;
             }
 
-            if (luis.IsHighEnoughScore(result, 0.5))
+            if (luis.IsHighEnoughScore(result, 0.6))
             {
                 AskUserToRepeatQuestion(result);
             }

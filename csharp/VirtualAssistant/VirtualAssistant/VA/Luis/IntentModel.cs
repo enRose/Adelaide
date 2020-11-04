@@ -11,6 +11,8 @@ namespace VirtualAssistant.VA.Luis
         public IEnumerable<IntentModel> Intents { get; set; }
 
         public IEnumerable<EntityModel> Entities { get; set; }
+
+        public SentimentAnalysis SentimentAnalysis { get; set; }
     }
 
     public class IntentModel
@@ -25,6 +27,12 @@ namespace VirtualAssistant.VA.Luis
         public string Role { get; set; }
         public int StartIndex { get; set; }
         public int EndIndex { get; set; }
+        public double Score { get; set; }
+    }
+
+    public class SentimentAnalysis
+    {
+        public string Label { get; set; }
         public double Score { get; set; }
     }
 }

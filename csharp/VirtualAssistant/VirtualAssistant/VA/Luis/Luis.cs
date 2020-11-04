@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Text.Json;
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Intent;
+using Newtonsoft.Json;
 using VirtualAssistant.Utility;
 
 namespace VirtualAssistant.VA.Luis
@@ -78,7 +78,7 @@ namespace VirtualAssistant.VA.Luis
             var json = intent.Properties.GetProperty(
                 PropertyId.LanguageUnderstandingServiceResponse_JsonResult);
 
-            return JsonSerializer.Deserialize<T>(json);
+            return JsonConvert.DeserializeObject<T>(json);
         }
     }
 }

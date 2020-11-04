@@ -21,7 +21,7 @@ namespace VirtualAssistant.VA
 
         public void AddSkill(Action<IntentRecognitionResult> skill)
         {
-            skills.Add(nameof(skill), skill);
+            skills.Add(skill.Method.Name, skill);
         }
 
         public abstract void Handle(IntentRecognitionResult result);

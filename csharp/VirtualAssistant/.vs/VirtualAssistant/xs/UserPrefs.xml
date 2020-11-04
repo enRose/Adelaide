@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="VirtualAssistant/VA/Luis/Luis.cs">
     <Files>
       <File FileName="VirtualAssistant/VA/Rebeka/Rebeka.cs" Line="25" Column="31" />
-      <File FileName="VirtualAssistant/VA/Persona.cs" Line="18" Column="37" />
+      <File FileName="VirtualAssistant/VA/Persona.cs" Line="20" Column="10" />
       <File FileName="VirtualAssistant/VA/Luis/Luis.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -10,7 +10,6 @@
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
           <Node name="VirtualAssistant" expanded="True">
-            <Node name=".vs" expanded="True" />
             <Node name="VirtualAssistant" expanded="True">
               <Node name="Utility" expanded="True" />
               <Node name="VA" expanded="True">
